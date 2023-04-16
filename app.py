@@ -23,16 +23,16 @@ if choose=='GBDT算法':
     并把多颗决策树的结果累加起来作为最终的预测输出。该算法将决策树与集成思想进行了有效的结合。')
     st.sidebar.write('我们需要知道的是，度量任何一个模型最重要的就是这个模型的损失函数。\
     我们训练的目标就是使得损失函数L最小化。')
-    st.sidebar.image('1.png', width=300)
+    st.sidebar.image('1.png', width=350)
     st.sidebar.write('当损失函数是平方损失和指数损失时，每一步优化是很简单的。\
     但对一般损失函数而言，往往每一步优化没那么容易，如绝对值损失函数和Huber损失函数。常见的损失函数及其梯度如下表所示：')
-    st.sidebar.image('2.png', width=300)
+    st.sidebar.image('2.png', width=350)
     st.sidebar.write('如何使得损失函数最小化？调整参数，使得损失沿着梯度方向下降。')
     st.sidebar.write('对于损失函数为平方损失函数的，我们可以使用的是yj-Ti对xj的\
     预测结果作为残差。那么对于其他类型的损失函数我们应该使用什么作为残差以达到最好\
     的效果呢呢？针对这一问题，Freidman提出了梯度提升算法：利用最速下降的近似方法，\
     即利用损失函数的负梯度在当前模型的值。')
-    st.sidebar.image('3.png', width=300)
+    st.sidebar.image('3.png', width=350)
     st.sidebar.write('如果我们对提升树的损失函数求偏导，就可以发现，偏导是等于残\
     差的，见上图。（因为上文的残差是损失函数梯度的一个特例，对应的损失函数为平方损失\
     函数）。因此，对于不同的损失函数，我们可以使用损失函数的偏导作为我们的残差。')
@@ -45,7 +45,7 @@ else:
     st.sidebar.write('3.初始化种群：随机生成第一代种群。')
     st.sidebar.write('4.利用适应度函数评价种群，判断是否满足停止条件，若是则停止，输出最优解；否则继续进行操作。')
     st.sidebar.write('5.对种群进行选择、交叉、变异操作，得到下一代种群，回到第4步。')
-    st.sidebar.image('4.png', width=300)
+    st.sidebar.image('4.png', width=350)
     st.sidebar.write('可得到的结果：')
     st.sidebar.write('1. 最佳适应值的个体染色体编码，通过解码操作获取自变量所对应的值。')
     st.sidebar.write('2. 最佳适应度值，也就是算法找到的全局最优解。')
