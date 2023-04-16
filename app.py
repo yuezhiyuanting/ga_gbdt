@@ -167,7 +167,7 @@ elif genre == '第二层级':
             flag = 1
             flag = 0
     for em in options:
-        y = df1[em]
+        y = df2[em]
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=123)
         if flag == 1:
             chromosome_num = 2
@@ -231,7 +231,7 @@ elif genre == '第三层级':
             flag = 1
             flag = 0
     for em in options:
-        y = df1[em]
+        y = df3[em]
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=123)
         if flag == 1:
             chromosome_num = 2
@@ -292,7 +292,7 @@ else:
             flag = 1
             flag = 0
     for em in options:
-        y = df1[em]
+        y = df4[em]
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=123)
         if flag == 1:
             chromosome_num = 2
